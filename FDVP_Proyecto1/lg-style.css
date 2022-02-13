@@ -1,0 +1,152 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --fl: 14px;
+    --fm: 16px;
+    --fb: 18px;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+.login {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.close {
+    display: grid;
+    justify-items: right;
+    height: 30px;
+    width: 300px;
+    font-size: var(--fm);
+    padding: 6px;
+    margin-bottom: 12px; 
+}
+
+.close-button{
+    background-color: var(--white);
+    color:var(--very-light-pink);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 30px;
+    font-size: var(--fm);
+    padding: 6px;
+    justify-self: right;
+    margin-bottom: 12px; 
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo {
+    width: 150px;
+    display: none;
+}
+
+.form {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.title {
+    color: var(--black);
+    font-size: var(--fb);
+    margin-bottom: 12px;
+    text-align: center;
+}
+.subtitle {
+    color: var(--very-light-pink);
+    font-size: var(--fm);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--fm);
+    padding: 6px;
+    margin-bottom: 12px; 
+}
+
+.forgot {
+    display: grid;
+    place-items: center;
+}
+
+.forgot a {
+    color: var(--hospital-green);
+    align-items: centar;
+    font-size: var(--fl);
+    text-decoration: none;
+    text-align-last: center;
+}
+
+.login-button {
+    background-color: var(--hospital-green);
+    color: var(--white);
+    margin-top: 28px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: var(--hospital-green);
+    box-shadow: none;
+}
+
+.signup-button {
+    background-color: var(--text-input-field);
+    color: var(--hospital-green);
+    margin-top: 28px;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    border-color: var(--hospital-green);
+    box-shadow: none;
+    margin-bottom: 12px;
+}
+
+.signup {
+    display: grid;
+    justify-items: center;
+    align-self: flex-start;
+}
+
+@media (max-width: 640px) {
+    .logo {
+        display: block;
+    }
+    .logo {
+        display: block;
+    }
+    .signup {
+        align-self: flex-end;
+    }
+    
+}
+
+.resend span {
+    color: var(--very-light-pink);
+    font-size: var(--fm);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.resend a {
+    color: var(--hospital-green);
+    font-size: var(--fm);
+    margin-bottom: 10px;
+    text-align: center;
+}
